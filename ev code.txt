@@ -1,0 +1,24 @@
+Client wants -
+choose a car for me where
+1.remove columns Efficiency,FastCharge,RapidCharge,PowerTrain,BodyStyle,PlugType,Segment
+2.Budget between 55000 to 70000
+3.max seat
+4.Top speed
+5.best accel
+6.famous brand
+
+
+#remove unnecessary column
+
+alter table electric_car
+drop column Efficiency,
+drop column FastCharge,
+drop column RapidCharge,
+drop column PowerTrain,
+drop column BodyStyle,
+drop column PlugType,
+drop column Segment
+
+#filter code
+select brand,model,accel,topspeed,ranges,seats,priceeuro from electric_car
+where PriceEuro between 55000 and 70000 and Seats between 6 and 7 
