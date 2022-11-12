@@ -8,6 +8,9 @@ choose a car for me where
 6.famous brand
 
 
+####code start from here####
+
+
 #remove unnecessary column
 
 alter table electric_car
